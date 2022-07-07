@@ -133,13 +133,15 @@ header .overlay {
 
 .carousel-img-content h2 {
     font-size: 3.5rem !important;
-    animation: xuat-hien linear 1s 1;
+    animation: xuat-hien linear 2s infinite;
+    animation-delay: 2s;
+    opacity: 0;
     
 }
 
 @keyframes xuat-hien {
     0% {
-        opacity: 0 ;
+        opacity: 1 ;
     }
 
     100% {
@@ -149,7 +151,9 @@ header .overlay {
 
 .carousel-img-content p {
     font-size: 1.5rem !important;
-    animation: xuat-hien linear 1s 1; 
+    animation: xuat-hien linear 2s 1; 
+    animation-delay: 3s;
+    opacity: 0;
 
 }
 
