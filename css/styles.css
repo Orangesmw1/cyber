@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Hind,sans-serif;
+}
+
+/* --------- header-----------  */
+
+header {
+    position: relative;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(39,43,54,.5);
+    z-index: 100;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.navbar .navbar-brand span i {
+    font-size: 45px;
+    color: #35a22c;
+    margin-right: 0.3rem;
+}
+
+.navbar .navbar-brand span {
+    font-size: 37px;
+    
+}
+
+.navbar-nav li {
+    position: relative;
+    margin-left: 30px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #35a22c;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+
+    transition: all linear 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #35a22c;
+}
+
+.navbar-nav li::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #35a22c;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: all linear 0.2s;
+}
+
+.navbar-nav li:hover::before {
+    width: 100%;
+}
+
+.navbar-nav li:first-child:before {
+    width: 100%;
+    
+}
+
+.introduce {
+
+}
+
+.introduce .carousel .carousel-inner {
+    overflow: hidden;
+}
+
+.introduce .carousel .carousel-inner .carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.introduce .carousel .carousel-inner .carousel-item:first-child {
+    background-image: url(../img/cyber02.jpg);
+    
+}
+
+.introduce .carousel .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(../img/cyber04.jpg);
+}
+
+.introduce .carousel .carousel-inner .carousel-item:last-child {
+    background-image: url(../img/cyber06.jpg);
+}
+
+.carousel-inner .carousel-item .carousel-img-content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 101;
+    transform: translate(-50%, -40%);
+}
+
+.carousel-img-content img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-img-content h2 {
+    font-size: 3.5rem !important;
+}
+
+.carousel-img-content p {
+    font-size: 1.5rem !important;
+
+}
+
+.introduce .carousel .carousel-indicators {
+    z-index: 101;
+    margin-bottom: 100px;
+}
+
+.introduce .carousel .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.introduce .carousel .carousel-indicators li.active {
+    background-color: #35a22c;
+}
+
+/* --------- section----------- */
+section {
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-heading {
+    text-align: center;
+    max-width: 750px;
+}
+
+.project-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #1a1d2d;
+    font-weight: 600;
+}
+
+.project-heading p {
+    color: #585858;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-content .nav-pills .nav-item {
+    border: 1px solid #1a1d2d;
+    border-radius: 0.33rem;
+    margin: 0 5px;
+    
+}
+
+.project-content .nav-pills .nav-item .nav-link {
+    color: #1a1d2d;
+}
+
+.project-content .nav-pills .nav-item .nav-link.active {
+    background-color: #35a22c;
+    color: #fff;
+    border-color: #35a22c;
+}
+
+.project-content .tab-content {
+
+}
+
+.tab-content .tab-pane {
+  
+}
+
+.tab-pane .block-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.tab-pane .card {
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
+
+    border: none;
+    border-radius: 1rem;
+    max-width: 30%;
+    margin: 19px;
+}
+
+.tab-pane .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.25rem;
+    transition: all linear 0.5s;
+    border-bottom-left-radius: 1rem  ;
+    border-bottom-right-radius: 1rem  ; 
+    border: 1px solid transparent;
+    border-top: none;
+}
+
+.tab-pane .card:hover .card-body {
+    border-bottom-left-radius: 1rem  ;
+    border-bottom-right-radius: 1rem  ;
+    border: 1px solid #35a22c;
+    border-top: none;
+    box-shadow: none;
+}
+
+.card .card-body h3 {
+    font-size: 1.25rem;
+    transition: all linear 0.5s;
+}
+
+.tab-pane .card:hover h3 {
+    color: #35a22c;
+}
+
+.card .card-body p {
+    color: #585858;
+}
+
+/* available */
+.available {
+    background-image: url(../img/cyber14.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+
+    padding: 100px 0 100px;
+}
+
+.available-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.available .overlay {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(7,10,12,.72);
+    z-index: 100;
+}
+
+.available-heading {
+    max-width: 750px;
+
+    position: relative;
+    z-index: 101;
+}
+
+.available-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.available-content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0;
+
+    position: relative;
+    z-index: 101;
+}
+
+.block-available-content {
+    text-align: center;
+    max-width: 31%;
+    margin: 0px 10px;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 42px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
+    transition: all linear 0.3s;
+}
+
+.block-available-content:hover {
+    background: #000;
+    border-color: #fff;
+}
+
+.block-available-content i {
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.block-available-content h4 {
+    font-size: 20px;
+    color: #fff;
+    padding: 25px 0;
+    font-weight: 800;
+}
+
+.block-available-content p {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/* away */
+.away {
+    position: relative;
+
+    color: #585858;
+    padding: 70px 0;
+}
+
+.away .away-bg {
+    background-image: url(../img/cyber15.png);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.5;
+}
+
+.away .away-content {
+    padding: 0;
+}
+
+.away-content .block-away {
+    display: flex;
+
+    padding: 0;
+}
+
+.away-content-title {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 750px;
+    background: rgba(255,255,255,.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    padding: 45px;
+    padding-right: 70px;
+    
+}
+
+.away-content-title h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #1a1d2d;
+    font-weight: bolder;
+}
+
+.away-content-logo {
+    flex: 2;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.away-content-logo .away-logo-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.away-content .away-img-clone {
+    flex-grow: 1;
+    max-width: 20%;
+    flex-basis: 0;
+    padding: 0 10px;
+}
+
+.away-img-clone img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------footer-------- */
+footer {
+    background: #222;
+    color: #aaa;
+
+}
+
+.block-footer {
+    text-align: center;
+}
+
+.footer-social a  {
+    color: #aaa !important;
+    margin: 0 5px;
+}
+
+.footer-social a i {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    border: 1px solid #454545;
+    border-radius: 50%;
+    padding-top: 10px;
+    transition: all linear 0.5s;
+}
+
+.footer-social a:hover i {
+    color: #35a22c;
+    border: 1px solid #35a22c;
+}
+
+.footer-copyright {
+    margin: 30px 0 10px;
+    padding-top: 30px;
+    border-top: 1px solid #454545;
+}
+
+.footer-copyright a  {
+    color: #aaa;
+    text-decoration: none;
+    transition: all linear 0.2s;
+}
+
+.footer-copyright a:hover {
+    color: #35a22c;
+}
+
+

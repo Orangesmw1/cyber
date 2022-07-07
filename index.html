@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Portfolio</title>
+
+    <!-- font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- link bootstraps  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  file css  -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="#"><span><i class="fa fa-dice-d20"></i>CyberPortfolio</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="introduce">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <!-- <img src="./img/cyber02.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-img-content">
+                      <img src="./img/cyber05.jpg" alt="">
+                      <h2>Our goals. Our mission.</h2>
+                      <p>How we help other companies to grow.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- <img src="./img/cyber04.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-img-content">
+                      <img src="./img/cyber03.jpg" alt="">
+                      <h2>Our goals. Our mission.</h2>
+                      <p>How we help other companies to grow.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- <img src="./img/cyber06.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-img-content">
+                      <img src="./img/cyber07.jpg" alt="">
+                      <h2>Our goals. Our mission.</h2>
+                      <p>How we help other companies to grow.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+    <section>
+      <!-- project  -->
+      <div class="project container py-5">
+        <div class="project-heading pt-5">
+          <h2>I Love What I Do</h2>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+        </div>
+
+        <div class="project-content">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-projects" role="tab" aria-controls="pills-home" aria-selected="true">All Projects</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-illustration" role="tab" aria-controls="pills-profile" aria-selected="false">Illustration</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-photography" role="tab" aria-controls="pills-contact" aria-selected="false">Photography</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-website" role="tab" aria-controls="pills-contact" aria-selected="false">Website</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-projects" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="block-cards">
+                <div class="card" >
+                  <img src="./img/cyber08.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Apologetic robot holding flowers</h3>
+                    <p class="card-text">Branding</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber09.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Woman walking her small dog</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber10.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Oil bottle branding</h3>
+                    <p class="card-text">Branding</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber11.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Smiling Woman</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber12.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Drink can design</h3>
+                    <p class="card-text">Packaging</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">I love you hand gesture</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="tab-pane fade" id="pills-illustration" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="block-cards">
+                <div class="card" >
+                  <img src="./img/cyber08.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Apologetic robot holding flowers</h3>
+                    <p class="card-text">Branding</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber09.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Woman walking her small dog</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber10.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Oil bottle branding</h3>
+                    <p class="card-text">Branding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-photography" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="block-cards">
+                <div class="card" >
+                  <img src="./img/cyber10.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Oil bottle branding</h3>
+                    <p class="card-text">Branding</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber11.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Smiling Woman</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="block-cards">
+                <div class="card" >
+                  <img src="./img/cyber12.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">Drink can design</h3>
+                    <p class="card-text">Packaging</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="./img/cyber13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">I love you hand gesture</h3>
+                    <p class="card-text">Illustrations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- available -->
+      <div class="available">
+        <div class="overlay"></div>
+        <div class="available-container container">
+          <div class="available-heading text-center">
+            <h2 class="text-white ">I'm Available For Hire</h2>
+            <p class="text-white">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+          </div>
+          <div class="available-content">
+            <div class="block-available-content mb-5  ">
+              <i class="fa fa-paint-brush"></i>
+              <h4>Design</h4>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+            </div>
+            <div class="block-available-content mb-5 ">
+              <i class="fa fa-shekel-sign"></i>
+              <h4>Marketing</h4>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+            </div>
+            <div class="block-available-content mb-5 ">
+              <i class="fa fa-camera"></i>
+              <h4>Photography</h4>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- away -->
+      <div class="away">
+        <div class="away-bg"></div>
+        <div class="away-content container">
+          <div class="block-away">
+            <div class="away-content-title">
+              <h2>Our Achievement and Award</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div class="away-content-logo">
+              <p>Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo facilisis. Mus laoreet scelerisque habitant urna dui sem diam. Purus dis nam eget. Scelerisque placerat lectus lorem etiam. Elementum integer phasellus lectus.</p>
+              <div class="away-logo-img">
+                <div class="away-img-clone">
+                  <img src="./img/cyber16.png" alt="">
+                </div>
+                <div class="away-img-clone">
+                  <img src="./img/cyber17.png" alt="">
+                </div>
+                <div class="away-img-clone">
+                  <img src="./img/cyber18.png" alt="">
+                </div>
+                <div class="away-img-clone">
+                  <img src="./img/cyber19.png" alt="">
+                </div>
+                <div class="away-img-clone">
+                  <img src="./img/cyber20.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="block-footer container">
+        <div class="footer-social">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-google-plus-g"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            © 2021 CyberPortfolio. All rights reserved | Designed by
+            <a href="">CyberSoft</a>
+          </p>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- script bootstraps  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
